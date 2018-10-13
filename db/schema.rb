@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181013002628) do
+ActiveRecord::Schema.define(version: 20181013171804) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,6 +74,17 @@ ActiveRecord::Schema.define(version: 20181013002628) do
     t.string "image_uid"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "refinery_inquiries", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "phone"
+    t.text "additional_comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["id"], name: "index_refinery_inquiries_on_id"
   end
 
   create_table "refinery_page_part_translations", force: :cascade do |t|
@@ -151,6 +162,20 @@ ActiveRecord::Schema.define(version: 20181013002628) do
     t.string "file_ext"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "refinery_settings", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.text "value"
+    t.boolean "destroyable", default: true
+    t.string "scoping"
+    t.boolean "restricted", default: false
+    t.string "form_value_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string "slug"
+    t.string "title"
+    t.index ["name"], name: "index_refinery_settings_on_name"
   end
 
   create_table "seo_meta", id: :serial, force: :cascade do |t|

@@ -1,3 +1,20 @@
+GIT
+  remote: https://github.com/refinery/refinerycms-forms
+  revision: 496d3ce44f8ae7a16139484ad3e7013ca6025f66
+  branch: master
+  specs:
+    refinerycms-forms (2.0.0)
+      refinerycms-core (~> 4.0)
+
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-inquiries (1.0.0)
+      actionmailer
+      filters_spam (~> 0.3)
+      refinerycms-core (~> 4.0.1)
+      refinerycms-settings (~> 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -93,6 +110,7 @@ GEM
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.25)
+    filters_spam (0.5)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
     friendly_id (5.2.4)
@@ -221,6 +239,9 @@ GEM
       dragonfly (~> 1.1, >= 1.1.0)
       globalize (>= 5.1.0.beta1, < 5.2)
       refinerycms-core (= 4.0.1)
+    refinerycms-settings (4.0.1)
+      friendly_id (>= 5.1.0, < 5.3)
+      refinerycms-core (~> 4.0, >= 4.0.0)
     refinerycms-wymeditor (2.0.0)
       refinerycms-core (>= 4.0.0.dev, < 5.0)
     request_store (1.4.1)
@@ -308,7 +329,9 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 3.0, >= 3.0.0)
   refinerycms-authentication-devise (~> 2.0.0)
   refinerycms-core
+  refinerycms-forms!
   refinerycms-images (= 4.0.1)
+  refinerycms-inquiries!
   refinerycms-pages
   refinerycms-resources
   refinerycms-wymeditor (~> 2.0, >= 2.0.0)

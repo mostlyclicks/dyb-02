@@ -70,3 +70,7 @@ gem 'refinerycms-acts-as-indexed', ['~> 3.0', '>= 3.0.0']
 gem 'refinerycms-wymeditor', ['~> 2.0', '>= 2.0.0']
 
 gem 'refinerycms-authentication-devise', '~> 2.0.0'
+
+gem 'refinerycms-forms', git: 'https://github.com/refinery/refinerycms-forms', branch: 'master', group: :development
+
+gem 'refinerycms-inquiries', path: 'vendor/extensions'

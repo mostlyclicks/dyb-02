@@ -1,0 +1,80 @@
+sk:
+  refinery:
+    plugins:
+      inquiries:
+        title: Inquiries
+        description: Poskytuje kontaktný formulár a zaznamenáva inquiries
+    inquiries:
+      inquiries:
+        new:
+          send: Odoslať správu
+          privacy_policy: Chránime vaše súkromie
+      admin:
+        inquiries:
+          inquiry:
+            delete_inquiry: Trvalo odstrániť inquiry
+            read_inquiry: Prečítať inquiry
+            said: povedal
+            mark_as_spam: Označiť ako spam
+            mark_as_ham: Označiť ako prečítané
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Upraviť zoznam notifikovaných
+            edit_confirmation_email: Upraviť potvrdzovací e-mail
+          index:
+            no_inquiries: Zatiaľ ste neobdržali žiadne inquiries.
+          spam:
+            no_spam: Hurá! Nemáte žiaden spam.
+          show:
+            details: Podrobnosti
+            age: Vek
+            actions: Akcie
+            back_to_all_inquiries: Späť na všetky inquiries
+            spam: Spam
+            spam_yes: 'áno'
+            inquiry: Inquiry
+            to: Komu
+            from: Od
+            click_to_email: Kliknite pre odoslanie tejto adresy e-mailom
+            phone: Telefón
+            date: Dátum
+            message: Správa
+        settings:
+          notification_recipients_form:
+            inquiry_settings_value_name: Poslať upozornenie pre
+            explanation: Zakaždým, keď Vás niekto kontaktuje cez vaše webové stránky, Refinery odošle e-mail s upozornením na nový inquiry.
+            hint: Keď je odoslaný nový inquiry, Refinery odošle upozornenie na Váš e-mail.
+            example: "Zadajte e-mailovú adresu(y) ako: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: Komu
+            from: Od
+            subject: Predmet
+            click_to_edit_subject: Kliknite tu ak chcete upraviť predmet
+            explanation: Zakaždým, keď Vás niekto kontaktuje cez vaše webové stránky, Refinery odošle e-mail s potvrdením o prijatí odosielateľovi inquiry.
+            below_edit_email_sent: Nižšie môžete upraviť e-mail, ktorý je odosielaný.
+            the_customer_making_inquiry: Klient robiť inquiry
+            message: Správa
+            note: "Poznámka: umiestniťe text %name%, pre určenie pozície mena klienta v e-maile"
+      mailer:
+        notification:
+          greeting: Ahoj
+          you_recieved_new_inquiry: Práve ste obdržali nový inquiry na vašej webové stránke.
+          inquiry_starts: --- inquiry začiatok ---
+          inquiry_ends: --- inquiry koniec ---
+          from: Od
+          email: E-mail
+          phone: Telefón
+          message: Správa
+          closing_line: S pozdravom
+          ps_html: P.S. Všetky vaše inquiries sú uložené v "Inquiries" sekcii v Refinery, ak by ste ich chceli zobraziť neskôr.
+  activerecord:
+    models:
+      inquiry: Inquiry
+    attributes:
+      inquiry:
+        first_name: First name
+        last_name: Last name
+        email: Email
+        phone: Phone
+        additional_comments: Additional comments

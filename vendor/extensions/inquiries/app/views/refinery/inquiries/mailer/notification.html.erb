@@ -1,0 +1,19 @@
+<%= t('.greeting') %>,<br/>
+<br/>
+<%= t('.you_recieved_new_inquiry') %><br/>
+<br/>
+<%= t('.inquiry_starts') %><br/>
+<br/>
+<%= t('.first_name', :default => t('activerecord.attributes.inquiry.first_name')) %>: <%= @inquiry.first_name %><br/>
+<%= t('.last_name', :default => t('activerecord.attributes.inquiry.last_name')) %>: <%= @inquiry.last_name %><br/>
+<%= t('.email', :default => t('activerecord.attributes.inquiry.email')) %>: <%= @inquiry.email %><br/>
+<%= t('.phone', :default => t('activerecord.attributes.inquiry.phone')) %>: <%= @inquiry.phone %><br/>
+<%= t('.additional_comments', :default => t('activerecord.attributes.inquiry.additional_comments')) %>: 
+<%= @inquiry.additional_comments %>
+<br/>
+<%= t('.inquiry_ends') %><br/>
+<br/>
+<%= t('.closing_line') %>,<br/>
+<%= Refinery::Core.site_name %><br/>
+<br/>
+<%= t('.ps_html') %>
