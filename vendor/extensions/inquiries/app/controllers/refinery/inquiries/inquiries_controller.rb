@@ -19,7 +19,8 @@ module Refinery
       def create
         @inquiry = Inquiry.new(inquiry_params)
 
-        if @inquiry.save
+        # if @inquiry.save
+          if verify_recaptcha(model: @inquiry) && @inquiry.save
           begin
             Mailer.notification(@inquiry, request).deliver_now
           rescue => e
