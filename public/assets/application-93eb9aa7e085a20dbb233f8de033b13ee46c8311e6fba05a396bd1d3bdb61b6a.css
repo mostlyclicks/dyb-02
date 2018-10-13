@@ -1,0 +1,135 @@
+/* Default error colouring */
+/* line 3, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+article, nav, header, footer, aside, hgroup, section {
+  display: block;
+}
+
+/* line 7, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+div.fieldWithErrors {
+  display: inline;
+}
+
+/* line 11, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+#errorExplanation {
+  border-top: 3px solid #F27F7F;
+  background: #FFBEBE;
+  padding: 10px;
+}
+
+/* line 17, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+#errorExplanation, #errorExplanation *, .fieldWithErrors, .fieldWithErrors * {
+  color: #9C2626;
+}
+
+/* Browser Hacks */
+/* line 22, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+a {
+  /* remove borders from images */
+  /*
+  Firefox Dotted Line Fix
+    - http://sonspring.com/journal/removing-dotted-links
+  */
+}
+/* line 24, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+a img {
+  border: 0px none;
+}
+/* line 31, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+a:focus {
+  outline: none;
+}
+
+/*
+Clearfix docs
+ - Main docs: http://positioniseverything.net/easyclearing.html
+ - IE7 change: http://www.456bereastreet.com/archive/200603/new_clearing_method_needed_for_ie7/
+*/
+/* line 41, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+.clearfix, section {
+  display: inline-block;
+}
+/* line 43, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+.clearfix:after, section:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Hide from IE Mac \*/
+/* line 53, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/formatting.scss */
+.clearfix, section {
+  display: block;
+}
+
+/* End hide from IE Mac */
+/* alignment styles */
+/* line 3, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.text-align-left {
+  text-align: left;
+}
+
+/* line 6, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 9, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.text-align-right {
+  text-align: right;
+}
+
+/* line 12, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.text-align-justify {
+  text-align: justify;
+}
+
+/* block alignment styles */
+/* line 17, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.image-align-left {
+  float: left;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* line 22, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.image-align-right {
+  float: right;
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
+
+/* font sizes */
+/* line 29, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.font-size-small {
+  font-size: 0.75em;
+}
+
+/* line 32, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.font-size-normal {
+  font-size: 1em;
+}
+
+/* line 35, /home/vagrant/.rvm/gems/ruby-2.4.2/gems/refinerycms-core-4.0.1/app/assets/stylesheets/refinery/theme.scss */
+.font-size-large {
+  font-size: 1.25em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+ */
+
