@@ -3,7 +3,7 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-	body {border-top:5px solid red;}
+	/*body {border-top:5px solid red;}*/
 	#thankyou-main {
 		background-size:140%;
 		min-height: 600px;
@@ -16,16 +16,13 @@
 	#logo-pad {
 		margin-top:24px;
 	}
-
-
-	
-
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-	body {border-top:5px solid blue;}
+	/*body {border-top:5px solid blue;}*/
 	#main {background-position: -100px;}
+	
 	#thankyou-main {
 		background-size:120%;
 		background-position-x:-110px;
@@ -38,8 +35,9 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-	body {border-top:5px solid orange;}
+	/*body {border-top:5px solid orange;}*/
 	#main {background-position: 0px;}
+	
 	#thankyou-main {
 		background-size:100%;
 		background-position-x:0px;
@@ -59,9 +57,11 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-	body {border-top:5px solid green;}
+	/*body {border-top:5px solid green;}*/
 	.inquiries {padding-bottom:200px;}
+	
 	#logo {width:200px;}
+	
 	#thankyou-main {
 		background-size:cover;
 		background-position-x:0px;
@@ -71,6 +71,7 @@
 	#thankyou-text {
 		padding-top:40px;
 	}
+
 	.btm-logo {
 	padding-top:630px;
 	}
@@ -78,7 +79,4 @@
 	#logo-pad {
 		margin-top:30px;
 	}
-
-
-
 }
