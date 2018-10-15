@@ -4,6 +4,20 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
 	body {border-top:5px solid red;}
+	#thankyou-main {
+		background-size:140%;
+		min-height: 600px;
+	}
+
+	.btm-logo {
+		padding-top:230px;
+	}
+
+	#logo-pad {
+		margin-top:24px;
+	}
+
+
 	
 
 }
@@ -12,13 +26,34 @@
 @media (min-width: 768px) {
 	body {border-top:5px solid blue;}
 	#main {background-position: -100px;}
-	
+	#thankyou-main {
+		background-size:120%;
+		background-position-x:-110px;
+	}
+
+	#logo-pad {
+		margin-top:28px;
+	}
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 	body {border-top:5px solid orange;}
 	#main {background-position: 0px;}
+	#thankyou-main {
+		background-size:100%;
+		background-position-x:0px;
+		
+		min-height:800px;
+	}
+
+	#logo-pad {
+		margin-top:32px;
+	}
+
+	.btm-logo {
+		padding-top:280px;
+	}
 	
 }
 
@@ -27,5 +62,23 @@
 	body {border-top:5px solid green;}
 	.inquiries {padding-bottom:200px;}
 	#logo {width:200px;}
+	#thankyou-main {
+		background-size:cover;
+		background-position-x:0px;
+		
+		min-height:1200px;
+	}
+	#thankyou-text {
+		padding-top:40px;
+	}
+	.btm-logo {
+	padding-top:630px;
+	}
+
+	#logo-pad {
+		margin-top:30px;
+	}
+
+
 
 }

@@ -1,1 +1,30 @@
-<%= render '/refinery/content_page' %>
+<%#= render '/refinery/content_page' %>
+<section>
+	<div class="container" id="thankyou-main">
+		<div class="row">
+			<div class="col-4 col-md-6 col-lg-7"></div>
+			<div class="col-8 col-md-5 col-lg-5">
+				<div id="thankyou-text">
+					<h3>Thank you for allowing Citizens State Bank to help you dump your bank! </h3>
+					<p class="lead">Someone will be in contact with you within one business day.</p> 
+					<p>In the meantime, click our on our logos below to learn more about our amazing products and organization!</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 col-md-6 col-lg-7"></div>
+			<div class="col-8 col-md-6 col-lg-5">
+				<div class="row">
+				<div class="col-6">
+				<%= link_to (image_tag 'Thank-You-csb-logo.png', class: 'img-fluid btm-logo'), 'https://www.citizensstatebank.us' %>
+			</div>
+			<div class="col-6">
+				<%= link_to (image_tag 'Thank-You-GetMore-logo.png', class: 'img-fluid btm-logo', id: 'logo-pad'),  'https://www.citizensstatebank.us/personal-banking/get-more-checking' %>
+			</div>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+</section>

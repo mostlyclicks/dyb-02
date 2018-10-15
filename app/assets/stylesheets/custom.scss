@@ -1,3 +1,8 @@
+h3 {
+	color:#cc092f;
+}
+
+
 #main {
 	background-image:url(/assets/BG-Dump-Your-Bank-Landing-Page.jpg);
 	background-size:cover;
@@ -31,3 +36,27 @@
 	color:rgba(0,0,0,.5);
 	background-color:#f3f3f3;
 }
+
+
+#thankyou-main {
+	background-image:url(/assets/BG-Thank-You-Page.jpg);
+	background-size:160%;
+	padding:20px 20px;
+	background-repeat: no-repeat;
+	position:relative;
+	background-position-x:-200px;
+	min-height:700px;
+
+}
+
+#thankyou-text {
+	padding-top:20px;
+}
+
+.btm-logo {
+	padding-top:230px;
+}
+
+	#logo-pad {
+		margin-top:26px;
+	}
