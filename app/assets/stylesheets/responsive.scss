@@ -1,0 +1,31 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	body {border-top:5px solid red;}
+	
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	body {border-top:5px solid blue;}
+	#main {background-position: -100px;}
+	
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	body {border-top:5px solid orange;}
+	#main {background-position: 0px;}
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	body {border-top:5px solid green;}
+	.inquiries {padding-bottom:200px;}
+	#logo {width:200px;}
+
+}

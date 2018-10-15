@@ -1,0 +1,33 @@
+#main {
+	background-image:url(/assets/BG-Dump-Your-Bank-Landing-Page.jpg);
+	background-size:cover;
+	padding:20px 20px;
+	background-repeat: no-repeat;
+	background-position-x:-250px;
+	position:relative;
+}
+
+.field {
+	label {display:none;}
+}
+
+#text-box {
+	background-color:rgba(255,255,255,.8);
+	padding:10px;
+	p {margin:.5em;line-height: 1.4em;}
+	margin-bottom:10px;
+}
+
+#logo {
+	width:150px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+.footer {
+	padding:10px;
+	font-size:12px;
+	color:rgba(0,0,0,.5);
+	background-color:#f3f3f3;
+}

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # configuration option `mounted_path` to something different in config/initializers/refinery/core.rb
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
+  root :to => 'refinery/inquiries/inquiries#new'
   mount Refinery::Core::Engine, at: Refinery::Core.mounted_path
 
 

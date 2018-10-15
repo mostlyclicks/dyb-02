@@ -1,45 +1,87 @@
-<% content_for :body do %>
-  <div class='inquiries'>
-    <%=raw @page.content_for(Refinery::Pages.default_parts.first[:slug].to_sym) %>
 
-    <%= form_for [refinery, :inquiries, @inquiry] do |f| %>
-      <%= render '/refinery/admin/error_messages',
+<style>
+  .errorExplanation {
+    padding:15px;
+    background-color:red;
+    color:white;
+    border-radius:10px;
+  }
+</style>
+
+
+<section>
+
+
+
+  <div class="container" id="main">
+
+    <div class="row">
+       <div class="col-5 col-sm-6 col-lg-7"></div> 
+       <div class="col-7 col-sm-6 col-lg-5">
+
+         <div id="text-box">
+         <h3>Are You Ready to Dump Your Bank?</h3>
+         <p>Dumping your bank can be easy. We’ll even deal with the hassle of breaking up and do the work for you! It’s so easy, you’ll wonder why you didn’t switch sooner.</p>
+         <p>Provide your info below to start a new, exciting relationship!</p>
+       </div>
+
+       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-5 col-sm-6 col-lg-7"><%= image_tag 'csb-logo.png', id: 'logo' %></div>
+      <div class="col-7 col-sm-6 col-md-5 col-lg-5">
+        <div class="inquiries">
+        <%=raw @page.content_for(Refinery::Pages.default_parts.first[:slug].to_sym) %>
+
+        <%= form_for [refinery, :inquiries, @inquiry] do |f| %>
+        <%= render "/refinery/admin/error_messages",
                  :object => @inquiry,
                  :include_object_name => true  %>
 
-      <div class='field first_name_field string_field'>
-        <%= f.label :first_name %>
-        <%= f.text_field :first_name %>
-      </div>
+        <div class="field first_name_field string_field form-group">
+        <%= f.label :first_name, class: 'invisible' %>
+        <%= f.text_field :first_name, placeholder: 'First Name (required)', class: 'form-control' %>
+        </div>
 
-      <div class='field last_name_field string_field'>
-        <%= f.label :last_name %>
-        <%= f.text_field :last_name %>
-      </div>
+        <div class="field last_name_field string_field form-group">
+        <%= f.label :last_name, class: 'invisible' %>
+        <%= f.text_field :last_name, placeholder: 'Last Name (required)',class: 'form-control'  %>
+        </div>
 
-      <div class='field email_field string_field'>
-        <%= f.label :email %>
-        <%= f.text_field :email %>
-      </div>
+        <div class="field email_field string_field form-group">
+        <%= f.label :email, class: 'invisible' %>
+        <%= f.text_field :email, placeholder: 'Email (required)', class: 'form-control'  %>
+        </div>
 
-      <div class='field phone_field string_field'>
-        <%= f.label :phone %>
-        <%= f.text_field :phone %>
-      </div>
+        <div class="field phone_field string_field form-group">
+        <%= f.label :phone, class: 'invisible' %>
+        <%= f.text_field :phone, placeholder: 'Phone (required)', class: 'form-control'  %>
+        </div>
 
-      <div class='field additional_comments_field text_field'>
-        <%= f.label :additional_comments %>
-        <%= f.text_area :additional_comments, :rows => 8 %>
-      </div>
+        <div class="field additional_comments_field text_field form-group">
+        <%= f.label :additional_comments, class: 'invisible' %>
+        <%= f.text_area :additional_comments, placeholder: 'Additional comments...', :rows => 5, class: 'form-control'  %>
+        </div>
 
-      <div>
+        <div>
         <%= recaptcha_tags %><br/>
+        </div>
+
+        <div class="actions">
+        <%= f.submit "Help me dump my bank", class: "btn btn-danger" %>
+        </div>
+        <% end %>
+        </div>
+        </div>
       </div>
 
-      <div class='actions'>
-        <%= f.submit t('.send') %>
-      </div>
-    <% end %>
   </div>
-<% end %>
-<%= render '/refinery/content_page' %>
+
+</section>
+
+
+
+
+
+
