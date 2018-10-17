@@ -20,16 +20,16 @@
        <div class="col-7 col-sm-6 col-lg-5">
 
          <div id="text-box">
-         <h3>Are You Ready to Dump Your Bank?</h3>
+         <h3>Are You Ready&nbsp;to<br/>Dump&nbsp;Your Bank?</h3>
          <p>Dumping your bank can be easy. We’ll even deal with the hassle of breaking up and do the work for you! It’s so easy, you’ll wonder why you didn’t switch sooner.</p>
-         <p>Provide your info below to start a new, exciting relationship!</p>
+         <p>Provide your info below to hear how easy it is to dump your bank!</p>
        </div>
 
        </div>
     </div>
 
     <div class="row">
-      <div class="col-5 col-sm-6 col-lg-7"><%= image_tag 'csb-logo.png', id: 'logo' %></div>
+      <div class="col-5 col-sm-6 col-lg-7"><%= link_to (image_tag 'csb-logo.png', id: 'logo'), 'https://www.citizensstatebank.us' %></div>
       <div class="col-7 col-sm-6 col-md-5 col-lg-5">
         <div class="inquiries">
         <%=raw @page.content_for(Refinery::Pages.default_parts.first[:slug].to_sym) %>
