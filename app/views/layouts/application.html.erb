@@ -11,6 +11,7 @@
     <div id="page_container">
       <header id="header" role="banner">
         <%#= render "/refinery/header" -%>
+        <script type="text/javascript">var ssaUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'pixel-a.basis.net/iap/1cf2da7c054f691b';new Image().src = ssaUrl; (function(d) { var syncUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'pixel-a.basis.net/dmp/asyncPixelSync'; var iframe = d.createElement('iframe'); (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0;"; iframe.src = "javascript:false"; d.body.appendChild(iframe); var doc = iframe.contentWindow.document; doc.open().write('<body onload="window.location.href=\''+syncUrl+'\'">'); doc.close(); })(document); </script>
       </header>
       <main id="page" role="main">
         <%= yield %>
