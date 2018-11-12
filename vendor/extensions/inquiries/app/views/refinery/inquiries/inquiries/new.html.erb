@@ -79,6 +79,17 @@
   </div>
 
 </section>
+<% if :seo_text? %>
+<section id="seo_text">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <%= raw @page.content_for(:seo_text) %>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
 
 
 
